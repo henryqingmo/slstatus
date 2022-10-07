@@ -71,5 +71,5 @@ static const struct arg args[] = {
     { ram_perc, " %s%% | ",               NULL }, 
     { disk_perc, " %s%% | ",               "/" },
     { run_command, " %s | ",   "pactl get-sink-volume 0 | awk -F \"/\" '{print $2}'" }, 
-    { datetime, "%s",           "%a %b %d - %I:%M %p" },
+    { datetime, "%s",           "%F %I:%M %p" },
 };
