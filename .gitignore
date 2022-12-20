@@ -1,9 +1,0 @@
-## ignore gitignore file
-.gitignore
-## ignoring files
-*.o
-*.orig
-*.rej
-*.1
-slstatus
-
