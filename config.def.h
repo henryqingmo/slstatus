@@ -65,11 +65,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-    { netspeed_rx, " %sB ",     "wlp0s20f3" },
-    { netspeed_tx, " %sB | ",    "wlp0s20f3" }, 
-    { cpu_perc, "﬙ %s%% | ",               NULL },
-    { ram_perc, " %s%% | ",               NULL }, 
-    { disk_perc, " %s%% | ",               "/" },
-    { run_command, " %s | ",   "pactl get-sink-volume 0 | awk -F \"/\" '{print $2}'" }, 
-    { datetime, "%s",           "%a %b %d - %I:%M %p" },
+    { netspeed_rx, "^c#e5c078^ %sB ",     "wlp0s20f3" },
+    { netspeed_tx, "^c#e5c078^ %sB ",    "wlp0s20f3  " }, 
+    { cpu_perc, "^c#61afef^﬙ %s%%  ",               NULL },
+    { ram_perc, "^c#C678DD^ %s%%  ",               NULL }, 
+    { disk_perc, "^c#E06C75^ %s%%  ",               "/" },
+    { run_command, "^c#98C379^%s ",   "pactl get-sink-volume 0 | awk -F \"/\" '{print $2}'" }, 
+    { datetime, "^c#56B6C2^  %s ",           "%h%d %Y(%I:%M %p)" },
 };
