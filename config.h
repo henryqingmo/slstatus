@@ -70,6 +70,6 @@ static const struct arg args[] = {
     { cpu_perc, "^c#61afef^﬙ %s%%  ",               NULL },
     { ram_perc, "^c#C678DD^ %s%%  ",               NULL }, 
     { disk_perc, "^c#E06C75^ %s%%  ",               "/" },
-    { run_command, "^c#98C379^%s ",   "pactl get-sink-volume 0 | awk -F \"/\" '{print $2}'" }, 
+    { run_command, "^c#98C379^%s ",   "amixer sget Master | awk -F \"[][]\" ' /Right:/ {print \" \"$2}'" }, 
     { datetime, "^c#56B6C2^  %s ",           "%h%d %Y(%I:%M %p)" },
 };
